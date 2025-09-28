@@ -12,7 +12,7 @@ A full-stack MERN application developed as a 48-hour prototype. ResearchNest pro
 6. Secure Authentication: JWT-based authentication ensures that all API endpoints are protected and accessible only by the appropriate roles.
 
 ## Tech Stack
-* Frontend: React, React Router, Context API, Material-UI (MUI)
+* Frontend: React, Vite, React Router, Context API, Material-UI (MUI)
 * Backend: Node.js, Express.js
 * Database: MongoDB with Mongoose
 * Authentication: JSON Web Tokens (JWT), bcrypt
@@ -35,14 +35,14 @@ To use the application, you must first populate it with sample data. A seed scri
     JWT_SECRET=a_very_secret_key_for_the_hackathon
 3. Navigate to the client directory from the project root. Install dependencies: npm install
         Create a .env file in the /client directory and add the following:
-        REACT_APP_API_URL=http://localhost:7000/api
+        VITE_API_URL=http://localhost:7000/api
 4. Run the Application
 
 ### Start the Backend Server: In the /server directory: npm run dev
 The server will be running on http://localhost:7000.
 
-### Start the Frontend Application: In the /client directory: npm start
-The React app will open on http://localhost:3000.
+### Start the Frontend Application: In the /client directory: npm run dev
+The React app will open on http://localhost:5173.
 
 ## User Credentials for Login
 The seed script creates the following user accounts. You can use these to log in and test the application.
